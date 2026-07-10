@@ -22,6 +22,9 @@ class Settings(BaseSettings):
     # Chroma vector store path
     CHROMA_PERSIST_DIR: str = "./chroma_db"
 
+    # CORS
+    FRONTEND_URL: str = "http://localhost:3000"
+
     # FAQ file path
     FAQ_FILE_PATH: str = "./data/gigacorp_faq.txt"
 
