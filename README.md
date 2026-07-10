@@ -109,7 +109,7 @@ graph TD
 4. Create a `.env` file in the `backend` folder:
    ```env
    GROQ_API_KEY="your_groq_key"
-   GROQ_MODEL="llama3-70b-8192" # or whichever model you prefer
+   GROQ_MODEL="openai/gpt-oss-120b"
    DATABASE_URL="postgresql+asyncpg://user:password@host/dbname"
    FAQ_FILE_PATH="./data/gigacorp_faq.txt"
    CHROMA_PERSIST_DIR="./chroma_db"
