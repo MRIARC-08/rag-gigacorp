@@ -17,13 +17,12 @@ from core.config import get_settings
 
 settings = get_settings()
 
-# Cache the embeddings model so it's only loaded once (not on every request)
-_embeddings = None
+# Eagerly initialize the embeddings model synchronously at startup
+# This prevents an "I/O operation on uninitialized object" error when FastEmbed is 
+# initialized inside FastAPI's async lifespan context
+_embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 
 def get_embeddings():
-    global _embeddings
-    if _embeddings is None:
-        _embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     return _embeddings
 
 def get_vectorstore():
