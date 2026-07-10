@@ -147,14 +147,7 @@ graph TD
    ```
 5. Open [http://localhost:3000](http://localhost:3000) in your browser!
 
----
 
-## 🌐 Deployment Recommendations
-
-- **Frontend**: Deploy to [Vercel](https://vercel.com/) (Free).
-- **Backend**: Deploy as a Web Service on [Render](https://render.com/) or [Railway](https://railway.app/).
-  - *Note: For free ephemeral servers, commit your `./chroma_db` folder to the repository so the vector store is available immediately upon boot.*
-- **Database**: [Neon](https://neon.tech/) (Free tier easily covers personal projects).
 
 ---
 
