@@ -1,0 +1,22 @@
+# Core
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-dotenv==1.0.1
+
+# LangChain
+langchain==0.2.6
+langchain-groq==0.1.6
+langchain-chroma==0.1.2
+langchain-huggingface==0.0.3
+langchain-community==0.2.6
+
+# Database
+sqlalchemy[asyncio]==2.0.31
+asyncpg==0.29.0
+
+# Pydantic
+pydantic==2.7.4
+pydantic-settings==2.3.4
+
+# Embeddings (local, no API key)
+sentence-transformers==3.0.1

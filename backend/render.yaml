@@ -1,0 +1,26 @@
+# backend/render.yaml
+# Render deployment configuration
+
+services:
+  - type: web
+    name: gigacorp-rag-backend
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m rag.ingest
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: NEXTAUTH_SECRET
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: CHROMA_PERSIST_DIR
+        value: ./chroma_db
+      - key: FAQ_FILE_PATH
+        value: ./data/gigacorp_faq.txt

@@ -1,0 +1,137 @@
+GIGACORP CUSTOMER SUPPORT — KNOWLEDGE BASE
+Version: 2.1 | Last Updated: 2024
+==========================================
+
+SECTION 1: SHIPPING POLICIES
+[Line 6]
+Q: Do you ship internationally?
+A: Yes, GigaCorp ships to over 50 countries worldwide including 
+   India, UK, Canada, Australia, Germany, and all EU nations.
+
+[Line 10]
+Q: How much does shipping to India cost?
+A: Standard shipping to India costs $12.99 USD with delivery 
+   in 10-15 business days. Express shipping costs $29.99 USD 
+   with delivery in 5-7 business days.
+
+[Line 15]
+Q: How much does shipping to the UK cost?
+A: Standard shipping to UK costs $8.99 USD, delivered in 
+   7-10 business days. Express is $19.99 USD in 3-5 days.
+
+[Line 20]
+Q: What is the free shipping threshold?
+A: Orders above $75 USD qualify for free standard shipping 
+   within the US. International orders above $150 USD get 
+   50% off shipping costs.
+
+[Line 25]
+Q: How long does domestic US shipping take?
+A: Standard US shipping takes 3-5 business days at $4.99.
+   Express takes 1-2 business days at $12.99.
+   Same day delivery available in select cities for $19.99.
+
+SECTION 2: RETURN PROCESSES
+[Line 32]
+Q: What is GigaCorp's return policy?
+A: GigaCorp offers a 30-day hassle-free return policy on all 
+   products. Items must be unused, in original packaging, 
+   and accompanied by proof of purchase.
+
+[Line 37]
+Q: How do I initiate a return?
+A: To initiate a return:
+   1. Log into your GigaCorp account
+   2. Go to Orders > Select Order > Request Return
+   3. Print the prepaid return label
+   4. Drop off at any registered courier partner
+   Refund is processed within 5-7 business days of receiving 
+   the returned item.
+
+[Line 45]
+Q: Are there any non-returnable items?
+A: The following items cannot be returned:
+   - Digital downloads and software licenses
+   - Perishable goods
+   - Customized or personalized items
+   - Items marked "Final Sale"
+   - Opened hygiene products
+
+[Line 52]
+Q: What if I receive a damaged item?
+A: If your item arrives damaged, contact support within 48 hours
+   of delivery with photos. GigaCorp will ship a replacement 
+   at no cost or issue a full refund — your choice.
+
+SECTION 3: BUSINESS HOURS
+[Line 58]
+Q: What are GigaCorp's customer support hours?
+A: GigaCorp support is available:
+   - Monday to Friday: 9:00 AM – 8:00 PM EST
+   - Saturday: 10:00 AM – 6:00 PM EST
+   - Sunday: Closed
+   - Public Holidays: Emergency support only
+
+[Line 65]
+Q: How can I contact GigaCorp support?
+A: You can reach us through:
+   - Live Chat: Available during business hours on our website
+   - Email: support@gigacorp.com (response within 24 hours)
+   - Phone: 1-800-GIGA-CORP (Mon-Fri, 9AM-6PM EST)
+   - This AI Assistant: Available 24/7
+
+[Line 72]
+Q: Is there 24/7 support available?
+A: Full human support is not 24/7. However our AI assistant 
+   (that's me!) is available around the clock. For urgent 
+   issues outside business hours, email priority@gigacorp.com
+
+SECTION 4: SERVICE TIERS
+[Line 79]
+Q: What service plans does GigaCorp offer?
+A: GigaCorp offers three service tiers:
+
+   BASIC TIER — Free
+   - Access to standard product catalog
+   - Email support only
+   - 5GB cloud storage
+   - 1 user account
+
+   PROFESSIONAL TIER — $29/month
+   - Everything in Basic
+   - Priority email + live chat support
+   - 100GB cloud storage
+   - Up to 5 user accounts
+   - Advanced analytics dashboard
+
+   ENTERPRISE TIER — $99/month
+   - Everything in Professional
+   - 24/7 dedicated support manager
+   - Unlimited cloud storage
+   - Unlimited user accounts
+   - Custom integrations + API access
+   - SLA guarantee: 99.9% uptime
+
+[Line 100]
+Q: Can I upgrade or downgrade my plan?
+A: Yes, you can change your plan at any time from Account 
+   Settings > Subscription. Changes take effect on the next 
+   billing cycle. No cancellation fees.
+
+[Line 105]
+Q: Is there a free trial for paid plans?
+A: Yes! Professional tier has a 14-day free trial. Enterprise 
+   tier has a 30-day free trial. No credit card required to 
+   start a trial.
+
+SECTION 5: ACCOUNT & BILLING
+[Line 112]
+Q: What payment methods does GigaCorp accept?
+A: We accept Visa, Mastercard, American Express, PayPal, 
+   and bank transfers for Enterprise plans.
+
+[Line 116]
+Q: How do I cancel my subscription?
+A: Go to Account Settings > Subscription > Cancel Plan. 
+   You will retain access until the end of your billing period.
+   Data is retained for 90 days after cancellation.
