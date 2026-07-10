@@ -5,8 +5,9 @@ import os
 import sys
 import io
 
-# Suppress Chroma telemetry errors (harmless PostHog incompatibility)
+# Suppress Chroma telemetry and HuggingFace progress bars (prevents tqdm crashes on Render)
 os.environ["ANONYMIZED_TELEMETRY"] = "False"
+os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
 
 # Filter out the "Failed to send telemetry event" messages from stderr
 class TelemetryFilter(io.TextIOWrapper):
