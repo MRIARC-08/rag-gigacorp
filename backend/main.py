@@ -9,20 +9,7 @@ import io
 os.environ["ANONYMIZED_TELEMETRY"] = "False"
 os.environ["HF_HUB_DISABLE_PROGRESS_BARS"] = "1"
 
-# Filter out the "Failed to send telemetry event" messages from stderr
-class TelemetryFilter(io.TextIOWrapper):
-    def __init__(self, stream):
-        self._stream = stream
-    def write(self, msg):
-        if "Failed to send telemetry event" in str(msg):
-            return len(msg)
-        return self._stream.write(msg)
-    def flush(self):
-        self._stream.flush()
-    def __getattr__(self, name):
-        return getattr(self._stream, name)
 
-sys.stderr = TelemetryFilter(sys.stderr)
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
