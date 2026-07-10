@@ -22,43 +22,43 @@ graph TD
     User((User))
     
     %% Frontend
-    subgraph Frontend [Next.js Frontend]
-        UI[React/Tailwind UI]
-        NextAuth[NextAuth.js]
+    subgraph Frontend ["Next.js Frontend"]
+        UI["React/Tailwind UI"]
+        NextAuth["NextAuth.js"]
     end
     
     %% Backend
-    subgraph Backend [FastAPI Backend]
-        Router[API Routers]
-        Chain[LangChain RAG Chain]
-        Embedder[HuggingFace Embeddings]
+    subgraph Backend ["FastAPI Backend"]
+        Router["API Routers"]
+        Chain["LangChain RAG Chain"]
+        Embedder["HuggingFace Embeddings"]
     end
     
     %% External Services
-    Google[Google OAuth]
-    Groq[Groq LLM API]
+    Google["Google OAuth"]
+    Groq["Groq LLM API"]
     
     %% Databases
-    subgraph Databases [Data Storage]
-        Neon[(Neon PostgreSQL)]
-        Chroma[(ChromaDB Vector Store)]
-        Doc[gigacorp_faq.txt]
+    subgraph Databases ["Data Storage"]
+        Neon[("Neon PostgreSQL")]
+        Chroma[("ChromaDB Vector Store")]
+        Doc["gigacorp_faq.txt"]
     end
     
     %% Relationships
     User -->|Interacts| UI
-    UI <-->|JSON over HTTP| Router
-    UI <-->|Login/Callback| NextAuth
+    UI <-->|"JSON over HTTP"| Router
+    UI <-->|"Login/Callback"| NextAuth
     NextAuth <-->|Verify| Google
     
-    Router <-->|Save/Load Chats| Neon
-    Router <-->|Ask Question| Chain
+    Router <-->|"Save/Load Chats"| Neon
+    Router <-->|"Ask Question"| Chain
     
-    Chain -->|1. Create Embedding| Embedder
-    Chain -->|2. Similarity Search| Chroma
-    Chain <-->|3. Generate Answer| Groq
+    Chain -->|"1. Create Embedding"| Embedder
+    Chain -->|"2. Similarity Search"| Chroma
+    Chain <-->|"3. Generate Answer"| Groq
     
-    Doc -->|Ingested into| Chroma
+    Doc -->|"Ingested into"| Chroma
 ```
 
 ---
