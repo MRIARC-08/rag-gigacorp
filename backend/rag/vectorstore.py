@@ -10,8 +10,8 @@ os.environ["ANONYMIZED_TELEMETRY"] = "False"
 logging.getLogger("chromadb.telemetry").setLevel(logging.CRITICAL)
 
 from langchain_chroma import Chroma
-from langchain_huggingface import HuggingFaceEmbeddings
-# Note: Using HuggingFace embeddings (FREE, no API key needed)
+from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
+# Note: Using FastEmbed (extremely lightweight, no PyTorch needed, runs easily in 512MB RAM limit)
 
 from core.config import get_settings
 
@@ -23,10 +23,7 @@ _embeddings = None
 def get_embeddings():
     global _embeddings
     if _embeddings is None:
-        _embeddings = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2",
-            model_kwargs={"device": "cpu"}
-        )
+        _embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     return _embeddings
 
 def get_vectorstore():

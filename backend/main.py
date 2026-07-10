@@ -37,6 +37,13 @@ async def lifespan(app: FastAPI):
     # Startup: Create database tables
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+        
+    # Auto-ingest RAG vectorstore if it doesn't exist
+    if not os.path.exists(settings.CHROMA_PERSIST_DIR):
+        print("Vector database not found. Running auto-ingestion...")
+        from rag.ingest import ingest
+        ingest()
+        
     yield
     # Shutdown: cleanup if needed
     await engine.dispose()
